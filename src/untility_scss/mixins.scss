@@ -1,0 +1,18 @@
+@use "./colors.scss" as *;
+@use "sass:color";
+
+@mixin button-styles($padding: 0.8rem 1.5rem, $font-size: 1rem, $border-radius: 20px) {
+  background-color: color.scale($primary_btn, $lightness: -20%); // Fixed background color
+  padding: $padding;
+  border: none;
+  border-radius: $border-radius;
+  color: white;
+  font-size: $font-size;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: color.scale($primary_btn, $lightness: -30%); // Fixed hover background color
+  }
+}
