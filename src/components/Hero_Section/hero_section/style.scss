@@ -27,7 +27,6 @@
 
   @media (min-width: 1024px) {
     padding: 4rem;
-    gap: 4rem;
   }
 
   .herosection__content {
@@ -49,20 +48,24 @@
     .heroesection__top__content {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
       gap: 1rem;
 
       @media (min-width: 768px) {
         gap: 1.5rem;
+        align-items: start;
+      text-align: start;
       }
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 700;
         line-height: 1.2;
         color: white;
 
         @media (min-width: 640px) {
-          font-size: 2rem;
+          font-size: 3rem;
         }
 
         @media (min-width: 768px) {
@@ -94,11 +97,12 @@
 
       .content__button {
         @include button-styles();
-        align-self: flex-start;
+        align-self: center;
         margin-top: 0.5rem;
-
+        
         @media (min-width: 768px) {
           margin-top: 1rem;
+          align-self: flex-start;
         }
       }
     }
@@ -109,14 +113,16 @@
       gap: 1rem;
       margin-top: 0.5rem;
       flex-wrap: wrap;
+      margin: auto;
 
       @media (min-width: 375px) {
         gap: 1.5rem;
         justify-content: start;
       }
-
+      
       @media (min-width: 768px) {
         gap: 2rem;
+        margin: 0%;
         margin-top: 1rem;
         justify-content: start;
         flex-wrap: nowrap;
@@ -141,7 +147,7 @@
           }
         }
 
-        span:last-child {
+        .count{
           font-size: 1rem;
           font-weight: 700;
           color: rgba(white, 0.8);
@@ -149,10 +155,10 @@
           @media (min-width: 768px) {
             font-size: 1.25rem;
           }
-        }
-
-        .count_label {
-          font-weight: 400;
+          
+          .count_label {
+            font-weight: 400;
+          }
         }
       }
     }

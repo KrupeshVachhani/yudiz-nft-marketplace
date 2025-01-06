@@ -1,5 +1,4 @@
 @use "../../../untility_scss/colors.scss" as *;
-
 .tending_card {
   width: 100%;
   max-width: 400px; // Adjust as needed
@@ -15,6 +14,12 @@
       width: 100%;
       border-radius: 15px;
       object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; // Added hover transition
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Optional shadow effect on hover
+      }
     }
 
     .scendory_placholder {
@@ -25,6 +30,11 @@
       .extra_placholder_count {
         width: calc(33.333% - 7px); // Divide width into 3 equal parts, accounting for gap
         border-radius: 15px;
+        transition: transform 0.3s ease; // Added transition
+
+        &:hover {
+          transform: translateY(-3px); // Slightly less movement for secondary images
+        }
       }
 
       .extra_placholder_count {
@@ -59,6 +69,11 @@
         width: 24px; 
         height: 24px; 
         border-radius: 50%; 
+        transition: transform 0.3s ease; // Optional hover effect for profile image
+
+        &:hover {
+          transform: scale(1.1); // Slight scaling for user avatar on hover
+        }
       }
     }
   }

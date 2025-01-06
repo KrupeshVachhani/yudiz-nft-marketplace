@@ -81,36 +81,30 @@
     &::-webkit-scrollbar {
       height: 8px;
       width: 8px;
-      background: rgba(162, 89, 255, 0.2); 
+      background: rgba(162, 89, 255, 0.2);
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: #a259ff; 
+      background-color: #a259ff;
       border-radius: 4px;
 
       &:hover {
-        background-color: #a259ff
+        background-color: #a259ff;
       }
     }
 
     &::-webkit-scrollbar-track {
-      background: rgba(162, 89, 255, 0.1); 
+      background: rgba(162, 89, 255, 0.1);
       border-radius: 4px;
     }
 
-   
     scrollbar-width: thin;
     scrollbar-color: #a259ff rgba(162, 89, 255, 0.2); // Thumb color and track background
 
     > * {
       flex: 0 0 auto;
       width: 80%;
-      transition: transform 0.3s ease;
       cursor: pointer;
-
-      &:hover {
-        transform: translateY(-5px);
-      }
     }
 
     @media (min-width: 1024px) {

@@ -35,7 +35,7 @@ const Index = () => {
         <div className="heroesection__down__content">
           {stats.map((stat, index) => (
             <div key={index}>
-              <span>
+              <span className="count">
                 {isVisible && (
                   <CountUp
                     start={0}
