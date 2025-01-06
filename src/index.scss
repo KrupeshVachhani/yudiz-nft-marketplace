@@ -9,6 +9,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $primary_body_bg;
+
+    // Custom scrollbar styles for WebKit browsers
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+      background: rgba(162, 89, 255, 0.2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #a259ff;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #a259ff;
+      }
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(162, 89, 255, 0.1);
+      border-radius: 4px;
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color: #a259ff rgba(162, 89, 255, 0.2); // Thumb color and track background
+
 }
 
 * {
@@ -16,3 +41,4 @@
   margin: 0;
   box-sizing: border-box;
 }
+
