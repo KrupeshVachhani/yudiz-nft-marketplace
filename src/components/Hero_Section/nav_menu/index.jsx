@@ -28,7 +28,6 @@ const index = () => {
         tabIndex={0}
       >
         {isMenuOpen ? <FaTimes /> : <FaBars />}{" "}
-        {/* Toggle between hamburger and close icon */}
       </div>
 
       <div className={`nav__items ${isMenuOpen ? "active" : ""}`}>

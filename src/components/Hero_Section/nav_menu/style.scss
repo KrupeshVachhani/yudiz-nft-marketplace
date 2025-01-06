@@ -1,14 +1,17 @@
 @use "../../../untility_scss/colors.scss" as *;
-@use "../../../untility_scss/mixins.scss" as *; // Import the mixins
+@use "../../../untility_scss/mixins.scss" as *; 
 
 .navbar {
   background-color: $primary_body_bg;
   padding: 1rem 2rem;
   max-width: 1500px;
+  position: sticky;
+  top: 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 
   .nav__logo img {
     width: 100%;
@@ -37,7 +40,7 @@
         }
 
         .nav__button {
-          @include button-styles(); // Use default styles
+          @include button-styles();
         }
       }
     }

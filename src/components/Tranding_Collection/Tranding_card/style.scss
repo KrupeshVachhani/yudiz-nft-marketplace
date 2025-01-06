@@ -1,7 +1,7 @@
 @use "../../../untility_scss/colors.scss" as *;
 .tending_card {
   width: 100%;
-  max-width: 400px; // Adjust as needed
+  max-width: 400px; 
   margin: 0 auto;
 
   .tending_card_imgs {
@@ -14,11 +14,11 @@
       width: 100%;
       border-radius: 15px;
       object-fit: cover;
-      transition: transform 0.3s ease, box-shadow 0.3s ease; // Added hover transition
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
 
       &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Optional shadow effect on hover
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       }
     }
 
@@ -28,12 +28,12 @@
 
       img,
       .extra_placholder_count {
-        width: calc(33.333% - 7px); // Divide width into 3 equal parts, accounting for gap
+        width: calc(33.333% - 7px); 
         border-radius: 15px;
-        transition: transform 0.3s ease; // Added transition
+        transition: transform 0.3s ease; 
 
         &:hover {
-          transform: translateY(-3px); // Slightly less movement for secondary images
+          transform: translateY(-3px); 
         }
       }
 
@@ -69,10 +69,10 @@
         width: 24px; 
         height: 24px; 
         border-radius: 50%; 
-        transition: transform 0.3s ease; // Optional hover effect for profile image
+        transition: transform 0.3s ease; 
 
         &:hover {
-          transform: scale(1.1); // Slight scaling for user avatar on hover
+          transform: scale(1.1);
         }
       }
     }
