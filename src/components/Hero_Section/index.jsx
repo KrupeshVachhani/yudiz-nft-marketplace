@@ -1,5 +1,5 @@
-import NavMenu from './nav menu';
-import HeroSection from './hero section';
+import NavMenu from './nav_menu';
+import HeroSection from './hero_section';
 import './style.scss';
 
 const index = () => {

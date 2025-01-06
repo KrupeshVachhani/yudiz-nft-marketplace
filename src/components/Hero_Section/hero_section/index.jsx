@@ -18,7 +18,7 @@ const Index = () => {
   ];
 
   return (
-    <section>
+    <section className="hero_section">
       <div className="herosection__content">
         <div className="heroesection__top__content">
           <h1>
@@ -46,7 +46,7 @@ const Index = () => {
                   />
                 )}
               </span>
-              <span>{stat.label}</span>
+              <span className="count_label">{stat.label}</span>
             </div>
           ))}
         </div>

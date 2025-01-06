@@ -1,0 +1,129 @@
+.tranding_collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 3rem;
+  color: white;
+  max-width: 1400px;
+  margin: 1.5rem auto auto auto;
+
+  @media (min-width: 640px) {
+    padding: 1.5rem 2rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem 3rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2.5rem 5rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 3rem 4rem;
+  }
+
+  .tranding_collection__header {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: 3rem;
+      text-align: start;
+    }
+
+    .tranding_collection__title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+
+      @media (min-width: 640px) {
+        font-size: 1.75rem;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .tranding_collection__subtitle {
+      font-size: 0.875rem;
+      color: rgba(white, 0.8);
+
+      @media (min-width: 640px) {
+        font-size: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 1.125rem;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .tranding_collection_cards {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    padding: 1rem 0;
+    overflow-x: auto;
+
+    // Custom scrollbar styles for WebKit browsers
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+      background: rgba(162, 89, 255, 0.2); 
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #a259ff; 
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #a259ff
+      }
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(162, 89, 255, 0.1); 
+      border-radius: 4px;
+    }
+
+   
+    scrollbar-width: thin;
+    scrollbar-color: #a259ff rgba(162, 89, 255, 0.2); // Thumb color and track background
+
+    > * {
+      flex: 0 0 auto;
+      width: 80%;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 2rem 0;
+      overflow-x: auto;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 2.5rem 0;
+      overflow-x: hidden;
+    }
+  }
+}
